@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>beauty shop</title>
+        <!--link to css -->
+        <link rel="stylesheet"href="style.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        
+    </head>
+        <body>
+            <header>
+                <a href="#" class="logo"><img src="mylogo.png" alt=""></a>
+                
+                <nav>
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#shop">Shop</a>
+                    <a href="#customer">Customer</a>
+                    <a href="#contact">Contact</a>
+                </nav>
+                <div class="bx bx-menu" id="menu-icon"></div>
+            </header>
+
+
+            <section class="home" id="home">
+
+                    <div class="hero">
+                        <div class="slides">
+                            <div class="slide" style="background-image: url('0.jpeg');"></div>
+                            <div class="slide" style="background-image:url('5.jpeg');"></div>
+                            <div class="slide" style="background-image: url('6.jpeg');"></div>
+                        </div>
+                    </div> 
+
+                    
+                        <div class="text" id="typing-text">
+                        <h1>Welcome To Malowa Beauty Collections!</h1>
+                        <p>Discover amazing content just tailored for you.</p>
+                        </div>
+            </section>
+            <br>
+            <a href="#" class="btn">Our services</a>
+            <br>
+            <br>
+                        <!--About-->
+                        <section class="about" id="about">
+                            <h1>TODAY DEAL'S</h1>
+                            <div class="about-section">
+                                <div class="product">
+                                    <img src="tr.jpeg" alt="Product 1" onclick="zoomImage(this)">
+                                    <div class="product-name">Hairdressing</div>
+                                    <div class="product-price">$19.99</div>
+                                </div>
+                                <div class="product">
+                                    <img src="im1.jpg" alt="Product 2" onclick="zoomImage(this)">
+                                    <div class="product-name">Nail services</div>
+                                    <div class="product-price">$29.99</div>
+                                </div>
+                                <div class="product">
+                                    <img src="im2.jpg" alt="Product 3" onclick="zoomImage(this)">
+                                    <div class="product-name">Massage therapy</div>
+                                    <div class="product-price">$39.99</div>
+                                </div>
+                                <div class="product">
+                                    <img src="im6.jpg" alt="Product 3" onclick="zoomImage(this)">
+                                    <div class="product-name">Body treatment and well fitness</div>
+                                    <div class="product-price">$19.99</div>
+                                </div>
+                            </div>
+                        </section>
+                            
+                        <!--shop-->
+                        <section class="shop" id="shop">
+                            <div class="heading">
+                                <h2>Our shop</h2>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque commodi eligendi esse quam ipsa tempore ducimus placeat qui sapiente, totam sequi illum praesentium reprehenderit laudantium perferendis officiis soluta aut quos.</p>
+                            </div>
+                            <div class="shop-container">
+                                <div class="shop-box">
+                                    <div class="shop-img">
+                                        <img src="pro1.jpg"alt="">
+                                    </div>
+                                    <h3>Anngel roma</h3>
+                                    <h2>$ 14.2</h2>
+                                    <i class='bx bx-cart' id="cart-icon"></i>
+
+                                </div>
+                                <div class="shop-box">
+                                    <div class="shop-img">
+                                        <img src="pro4.jpg"alt="">
+                                    </div>
+                                    <h3>coconut face oil</h3>
+                                    <h2>$ 34.2</h2>
+                                    <i class='bx bx-cart' id="cart-icon"></i>
+
+                                </div>
+                                <div class="shop-box">
+                                    <div class="shop-img">
+                                        <img src="pro7.jpg"alt="">
+                                    </div>
+                                    <h3>Hair colorying products</h3>
+                                    <h2>$ 14.2</h2>
+                                    <i class='bx bx-cart' id="cart-icon"></i>
+
+                                </div>
+                                <div class="shop-box">
+                                    <div class="shop-img">
+                                        <img src="ty.jpeg"alt="">
+                                    </div>
+                                    <h3>Makeup products</h3>
+                                    <h2>$ 24.2</h2>
+                                    <i class='bx bx-cart' id="cart-icon"></i>
+
+                                </div>
+
+                            </div>
+
+
+                        </section>
+                        <section class="customer" id="customer">
+                         <div class="heading">
+                            <h2>Our Customer's</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis sapiente ipsam et corporis. Delectus corrupti ab nesciunt cum nemo doloremque ratione autem, atque veritatis recusandae deleniti dolorem accusantium aspernatur sunt.</p>
+                         </div>
+                         <div class="review">
+                            <img src="5.jpeg" alt="Customer 1" class="customer-photo">
+                            <div class="review-content">
+                                <p class="customer-name">John Doe</p>
+                                <p class="customer-review">This product changed my life! Highly recommend.</p>
+                                <div class="rating">
+                                    <span class="star">&#9733;</span>
+                                    <span class="star">&#9733;</span>
+                                    <span class="star">&#9733;</span>
+                                    <span class="star">&#9733;</span>
+                                    <span class="star">&#9734;</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="review">
+                            <img src="6.jpeg" alt="Customer 2" class="customer-photo">
+                            <div class="review-content">
+                                <p class="customer-name">Neigh Smith</p>
+                                <p class="customer-review">Excellent service and fast delivery!</p>
+                                <div class="rating">
+                                    <span class="star">&#9733;</span>
+                                    <span class="star">&#9733;</span>
+                                    <span class="star">&#9733;</span>
+                                    <span class="star">&#9733;</span>
+                                    <span class="star">&#9733;</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="review">
+                            <img src="0.jpeg" alt="Customer 3" class="customer-photo">
+                            <div class="review-content">
+                                <p class="customer-name">Emily Johnson</p>
+                                <p class="customer-review">Good quality, but the shipping took longer than expected.</p>
+                                <div class="rating">
+                                    <span class="star">&#9733;</span>
+                                    <span class="star">&#9733;</span>
+                                    <span class="star">&#9733;</span>
+                                    <span class="star">&#9734;</span>
+                                    <span class="star">&#9734;</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="review">
+                            <img src="pro2.jpg" alt="Customer 3" class="customer-photo">
+                            <div class="review-content">
+                                <p class="customer-name"> Latiffah</p>
+                                <p class="customer-review">Good quality.</p>
+                                <div class="rating">
+                                    <span class="star">&#9733;</span>
+                                    <span class="star">&#9733;</span>
+                                    <span class="star">&#9733;</span>
+                                    <span class="star">&#9734;</span>
+                                    <span class="star">&#9734;</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="review">
+                            <img src="ol.jpeg" alt="Customer 3" class="customer-photo">
+                            <div class="review-content">
+                                <p class="customer-name">Jane Smith</p>
+                                <p class="customer-review">This product exceeded my expectations!</p>
+                                <div class="rating">
+                                    <span class="star">&#9733;</span>
+                                    <span class="star">&#9733;</span>
+                                    <span class="star">&#9733;</span>
+                                    <span class="star">&#9733;</span>
+                                    <span class="star">&#9734;</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                         
+                        </section>
+                        <section class="contact"id="contact">
+                            <div class="heading">
+                                <h2>Contact us</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur distinctio consectetur neque culpa unde expedita. Repudiandae, repellat recusandae fuga ducimus debitis suscipit amet natus veritatis praesentium, eius quidem quod neque.</p>
+                            </div>
+                            <div class="contact-container">
+                                <div class="contact-info">
+                                    <h2>Get in touch</h2>
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique reiciendis aut corrupti deserunt placeat molestias incidunt impedit aliquam ipsa quae repudiandae non, commodi totam, vel ducimus tenetur enim distinctio. Modi?</p>
+                                    <div class="adress">
+                                        <i class='bx bx-current-location'><span>42 street NYC, NAIROBI 10001</span></i>
+                                        <i class='bx bxs-phone-call'><span> street NYC, KISUMU 00200</span></i>
+                                        <i class='bx bxs-envelope'><span>contact@beauty.com</span></i>           
+                                    </div>
+                                    <div class="social">
+                                        <i class='bx bxl-facebook'></i>
+                                        <i class='bx bxl-twitter'></i>
+                                        <i class='bx bxl-instagram'></i>
+                                        <i class='bx bxl-youtube '></i>
+
+                                    </div>
+                                </div>
+                                <div class="contact-form">
+                                    <form action="">
+                                        <input type="text" placeholder="Name*">
+                                        <input type="email" name="" id="" placeholder="Email*">
+                                         <textarea name="" id="" cols="30" rows="10" placeholder="message"></textarea>
+                                         <input type="button" value="submit" class="btn ">
+                                    </form>
+                                </div>
+                            </div>
+                        </section>
+                        <div class="copyright">
+                            <p>&#269; Esther malowa All Right Reserved.</p>
+                        </div>
+
+                    </div>
+                    
+
+                    </div>
+                    
+                   
+            </div>
+            <!--link to js-->
+            <script src="main.js"></script>
+            
+        </body>

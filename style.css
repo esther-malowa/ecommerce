@@ -1,0 +1,335 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header {
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px;
+    background-color: #751d5f;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    
+    
+    
+}
+.logo img{
+    width: 75px;
+    margin-right: 10px;
+    animation: spin 2s linear infinite;
+}
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+nav {
+    background-color: #751d5f;
+    overflow: hidden;
+    
+    margin-left:550px;
+}
+nav a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    
+    
+}
+nav a:hover {
+    background-color: #31a2be;
+    color: black;
+}
+.hero {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+.slides {
+    display: flex;
+    transition: transform 1s ease-in-out;
+    width: 300%;
+}
+.slide {
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+.text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 2em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+.btn{
+    padding: 10px 20px;
+    border-radius: 40px;
+    font-weight: 500;
+    background: rgba(0, 98, 128, 0.863);
+    text-decoration-line: none;
+    color: white;
+}
+.btn:hover{
+    background: #751d5f;
+}
+#about{
+
+    display: flex;
+    align-items: center;
+    flex-direction:column ;
+    background: url(p.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+     
+    
+}
+.about h1{
+    text-align: center;
+}
+.about-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+.product {
+    margin: 10px;
+    text-align: center;
+}
+.product img {
+    /*width: 200px;*/
+    /*height: 200px;*/
+    cursor: pointer;
+    transition: transform 0.2s;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+    width: 100%;
+    height: 300px;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+.product img img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+
+.product img:hover {
+    transform: scale(1.5);
+}
+.product-name {
+    font-weight: bold;
+    margin-top: 10px;
+}
+.product-price {
+    color: green;
+}
+.shop-container ,
+.customer-container{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+.shop-box{
+    position: relative;
+    flex: 1 1 17rem;
+    box-shadow: 0 4px 4px rgb(14 55 54 / 15%);
+    height: auto;
+}
+.shop-img{
+    width: 100%;
+    height: 300px;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+.shop-img img{
+   width: 100%;
+   height: 100%; 
+   object-fit: cover;
+   object-position: center;
+}
+.shop-img img{
+    transform: scale(1.1);
+    transition:0.5s ;
+}
+.shop-box h3{
+    font-size: 1rem;
+    font-weight: 500;
+    color:var(--second-color);
+    padding: 10px;
+
+}
+.shop-box h2{
+    font-size: 1.2rem;
+    color: var(--main-color);
+    letter-spacing: 1px;
+    padding: 10px;
+}
+
+#cart-icon {
+    font-size: 24px;
+    cursor: pointer;
+    transition: transform 0.3s;
+    color: aqua;
+}
+
+#cart-icon:hover {
+    transform: scale(1.2);
+}
+#customer{
+    background: url(im5.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.customer-reviews {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    
+}
+
+.review {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+.customer-photo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 15px;
+    
+}
+.review-content {
+    flex: 1;
+}
+.customer-name {
+    font-weight: bold;
+    margin: 0;
+}
+.customer-review {
+    margin: 5px 0;
+}
+.rating {
+    color: gold;
+}
+.star {
+    font-size: 20px;
+}
+.contact-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+.contact-info{
+    flex: 1 1 20rem;
+}
+.contact-form{
+    flex: 1 1 20rem;
+    justify-content: center;
+    display: flex;
+
+}
+.contact-info h2{
+    font-size: 1.7rem;
+    color: green;
+}
+.contact-info p{
+    margin: 0.5rem 0 1rem;
+}
+.adress{
+    display: flex;
+    flex-direction: column;
+}
+.adress i{
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    font-size: 20px;
+    font-weight: 600;
+    
+    
+}
+.adress span{
+    font-size: 1rem;
+    margin-left: 1rem;
+}
+.social{
+    margin-top: 1rem;
+    
+    
+    
+
+}
+.social i{
+    font-size: 24px;
+    color: green;
+    margin-right: 1rem;
+    
+
+}
+.social i:hover{
+    color: blue;
+}
+.contact-form form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+form input,
+textarea{
+    width: 100%;
+    padding: 17px;
+    border-radius: 0.5rem;
+    outline: none;
+    margin-bottom: 1rem;
+    border: 2px solid green;
+    box-shadow: 0 4px 4px 2px rgb(14 55 54 / 15%);
+}
+form input::placeholder,
+textarea::placeholder{
+    color: rgb(12, 139, 12);
+}
+form textarea{
+    resize: none;
+    height: 150px;
+}
+form .btn{
+    max-width: 100px;
+    background: blueviolet;
+    color: #fff;
+    text-transform: uppercase;
+}
+form .btn:hover{
+background: rgb(167, 18, 100);
+}
+.copyright{
+padding: 20px;
+text-align: center;
+}
